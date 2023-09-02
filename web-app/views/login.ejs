@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Web Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* === Google Font ===*/
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* === Variables Define ===*/
+        :root {
+            --primary-color: #3525D3;
+            --white-color: #fff;
+            --black-color: #3C4A57;
+            --light-gray: #E4E8EE;
+        }
+
+        /* === Body CSS ===*/
+        body {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        /* === Main Content CSS ===*/
+        .wrapper {
+            padding: 50px 25px 0;
+            max-width: 668px;
+            width: 100%;
+            margin: auto;
+        }
+
+        .wrapper::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url("../images/bg-1.svg");
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            z-index: -1;
+        }
+
+        .wrapper .headline {
+            text-align: center;
+            padding-bottom: 48px;
+        }
+
+        .wrapper .headline h1 {
+            font-size: 42px;
+            font-weight: 700;
+            line-height: 52px;
+        }
+
+        .wrapper .form {
+            max-width: 350px;
+            width: 100%;
+            margin: auto;
+        }
+
+        .wrapper .form-group {
+            margin-bottom: 15px;
+        }
+
+        .wrapper .form-group input {
+            display: block;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: -0.1px;
+            padding: 11px 15px;
+            height: 48px;
+            border-radius: 5px;
+            color: var(--black-color);
+            border: 1px solid #e4e8ee;
+            box-shadow: none;
+            width: 100%;
+        }
+
+        .wrapper .form-group input:focus {
+            outline: none;
+        }
+
+        .wrapper .form-group input::placeholder {
+            color: var(--black-color);
+            font-weight: 400;
+            font-size: 14px;
+        }
+
+        .wrapper .btn {
+            width: 100%;
+            margin: 15px 0 30px;
+            font-size: 14px;
+            line-height: 22px;
+            font-weight: 700;
+            padding: 12px 29px;
+            height: 48px;
+            text-transform: uppercase;
+            color: var(--white-color);
+            background-color: var(--primary-color);
+            border: none;
+            border-radius: 2px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .wrapper .btn:focus {
+            outline: none;
+        }
+
+        .wrapper .account-exist {
+            color: var(--black-color);
+            border-top: 1px solid var(--light-gray);
+            padding-top: 20px;
+            text-align: center;
+        }
+
+        .wrapper .account-exist a {
+            color: var(--primary-color);
+        }
+
+        .wrapper .forget-password {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 0;
+        }
+
+        .wrapper .forget-password a {
+            color: var(--primary-color);
+        }
+
+        .wrapper .forget-password .check-box {
+            font-size: 15px;
+            color: var(--black-color);
+        }
+
+        .signup.inActive {
+            display: none;
+        }
+
+        .signin {
+            display: none;
+        }
+
+        .signin.active {
+            display: block;
+        }
+
+        @media (max-width:1030px) {
+            .wrapper::before {
+                left: -25%;
+                min-height: 60vh;
+                height: 500px;
+            }
+        }
+
+        @media (max-width:767px) {
+            .wrapper {
+                max-width: 550px;
+            }
+
+            .wrapper .headline h1 {
+                font-size: 22px;
+                line-height: 25px;
+            }
+        }
+        @keyframes colorChange {
+            0% { color: red; }
+            25% { color: blue; }
+            50% { color: green; }
+            75% { color: orange; }
+            100% { color: purple; }
+        }
+
+        h5 {
+            animation: colorChange 3s infinite;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="headline">
+            <img src="../images/dbo-logo.png" alt="Deskripsi Gambar 2" width="180" height="80">
+            <h1>Builiding<br>Innovative Connection </h1> <br>
+            <h5 style="font-style: italic;"> Langsung saja klik SIGN UP</h5>
+        </div>
+        <form class="form"  action="/customers">
+            <div class="signup">
+                <div class="form-group">
+                    <input type="text" placeholder="Full name" >
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Email" >
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Password" >
+                </div>
+                <button type="submit" class="btn">SIGN UP</button>
+                <div class="account-exist">
+                    Already have an account? <a href="#" id="login">Login</a>
+                </div>
+            </div>
+
+            <form action="/customers" id="loginForm">
+            <div class="signin">
+                <div class="form-group">
+                    <input type="email" placeholder="Email" >
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Password" >
+                </div>
+                <div class="forget-password">
+                    <div class="check-box">
+                        <input type="checkbox" id="checkbox">
+                        <label for="checkbox">Remember me</label>
+                    </div>
+                    <a href="#">Forget password?</a>
+                </div>
+                <button type="submit" class="btn">LOGIN</button>
+                <div class="account-exist">
+                    Create New a account? <a href="#" id="signup">Signup</a>
+                </div>
+            </div>
+            </form>
+
+        </form>
+    </div>
+
+    <script>
+        let btnLogin = document.getElementById("login");
+        let btnSignUp = document.getElementById("signup");
+
+        let signIn = document.querySelector(".signin");
+        let signUp = document.querySelector(".signup");
+
+        btnLogin.onclick = function () {
+            signIn.classList.add("active");
+            signUp.classList.add("inActive");
+        }
+
+        btnSignUp.onclick = function () {
+            signIn.classList.remove("active");
+            signUp.classList.remove("inActive");
+        }
+
+        let loginForm = document.getElementById("loginForm");
+
+// Tambahkan event listener ke form saat pengguna mengirimkan form
+loginForm.addEventListener("submit", function (event) {
+    // Hentikan aksi default (pengiriman form)
+    event.preventDefault();
+
+    // Ganti URL sesuai dengan halaman yang ingin Anda arahkan (customer.ejs)
+    window.location.href = "/customers"; // Ganti "/customers" sesuai dengan path yang benar
+});
+
+    </script>
+</body>
+
+</html>

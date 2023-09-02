@@ -1,0 +1,184 @@
+{
+  "customers": [
+      {
+        "id": 1,
+        "name": "John Doe",
+        "email": "john.doe@example.com",
+        "phone": "123-456-7890"
+      },
+      {
+        "id": 2,
+        "name": "Jane Smith",
+        "email": "jane.smith@example.com",
+        "phone": "987-654-3210"
+      },
+      {
+        "id": 3,
+        "name": "Bob Johnson",
+        "email": "bob.johnson@example.com",
+        "phone": "555-555-5555"
+      },
+      {
+        "id": 4,
+        "name": "Alice Brown",
+        "email": "alice.brown@example.com",
+        "phone": "333-333-3333"
+      },
+      {
+        "id": 5,
+        "name": "Eva Wilson",
+        "email": "eva.wilson@example.com",
+        "phone": "777-777-7777"
+      },
+      {
+        "id": 6,
+        "name": "David Lee",
+        "email": "david.lee@example.com",
+        "phone": "111-111-1111"
+      },
+      {
+        "id": 7,
+        "name": "Lisa Johnson",
+        "email": "lisa.johnson@example.com",
+        "phone": "999-999-9999"
+      },
+      {
+        "id": 8,
+        "name": "Michael Smith",
+        "email": "michael.smith@example.com",
+        "phone": "444-444-4444"
+      },
+      {
+        "id": 9,
+        "name": "Sophia Martinez",
+        "email": "sophia.martinez@example.com",
+        "phone": "666-666-6666"
+      },
+      {
+        "id": 10,
+        "name": "Olivia Davis",
+        "email": "olivia.davis@example.com",
+        "phone": "888-888-8888"
+      },
+      {
+        "id": 11,
+        "name": "Robert Wilson",
+        "email": "robert.wilson@example.com",
+        "phone": "555-123-4567"
+      },
+      {
+        "id": 12,
+        "name": "Sarah Johnson",
+        "email": "sarah.johnson@example.com",
+        "phone": "777-987-6543"
+      },
+      {
+        "id": 13,
+        "name": "William Smith",
+        "email": "william.smith@example.com",
+        "phone": "123-555-7890"
+      },
+      {
+        "id": 14,
+        "name": "Emily Brown",
+        "email": "emily.brown@example.com",
+        "phone": "333-666-2222"
+      },
+      {
+        "id": 15,
+        "name": "James Lee",
+        "email": "james.lee@example.com",
+        "phone": "999-444-1111"
+      },
+      {
+        "id": 16,
+        "name": "Grace Martinez",
+        "email": "grace.martinez@example.com",
+        "phone": "666-123-8888"
+      },
+      {
+        "id": 17,
+        "name": "Daniel Davis",
+        "email": "daniel.davis@example.com",
+        "phone": "888-999-7777"
+      },
+      {
+        "id": 18,
+        "name": "Oliver Wilson",
+        "email": "oliver.wilson@example.com",
+        "phone": "555-789-6543"
+      },
+      {
+        "id": 19,
+        "name": "Sophia Lee",
+        "email": "sophia.lee@example.com",
+        "phone": "777-123-5555"
+      },
+      {
+        "id": 20,
+        "name": "Ella Smith",
+        "email": "ella.smith@example.com",
+        "phone": "123-333-9876"
+      },
+      {
+        "id": 21,
+        "name": "Matthew Brown",
+        "email": "matthew.brown@example.com",
+        "phone": "333-999-4444"
+      },
+      {
+        "id": 22,
+        "name": "Ava Lee",
+        "email": "ava.lee@example.com",
+        "phone": "999-555-1111"
+      },
+      {
+        "id": 23,
+        "name": "Liam Johnson",
+        "email": "liam.johnson@example.com",
+        "phone": "555-666-7777"
+      },
+      {
+        "id": 24,
+        "name": "Harper Davis",
+        "email": "harper.davis@example.com",
+        "phone": "777-888-9999"
+      },
+      {
+        "id": 25,
+        "name": "Benjamin Smith",
+        "email": "benjamin.smith@example.com",
+        "phone": "888-555-3333"
+      },
+      {
+        "id": 26,
+        "name": "Mia Wilson",
+        "email": "mia.wilson@example.com",
+        "phone": "555-123-9876"
+      },
+      {
+        "id": 27,
+        "name": "Ethan Johnson",
+        "email": "ethan.johnson@example.com",
+        "phone": "123-666-5555"
+      },
+      {
+        "id": 28,
+        "name": "Camila Brown",
+        "email": "camila.brown@example.com",
+        "phone": "666-999-1111"
+      },
+      {
+        "id": 29,
+        "name": "Alexander Lee",
+        "email": "alexander.lee@example.com",
+        "phone": "999-555-3333"
+      },
+      {
+        "id": 30,
+        "name": "Luna Smith",
+        "email": "luna.smith@example.com",
+        "phone": "555-333-1234"
+      }
+    ]
+}
